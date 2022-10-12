@@ -1,0 +1,13 @@
+version: '2'
+services:
+  gssgn-postgresql:
+    image: postgres:14.4
+    # volumes:
+    #     - ~/volumes/jhipster/gssgn/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DATABASE=itsol
+      - POSTGRES_USER=itsol
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
